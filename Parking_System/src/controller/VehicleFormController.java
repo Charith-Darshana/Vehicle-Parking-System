@@ -13,5 +13,9 @@ public class VehicleFormController {
     public Button btnVehicle;
 
     public void saveVehicle(ActionEvent actionEvent) {
+//        String vehicleNumber = txtNum.getText ( );
+//        String vehicleType = txtType. ( );
+//        String maximumWeight = txtNoOfPassengers.getText ( );
+//        String vehicleType = (String) cmbVehicleType.getValue ( );
     }
 }

@@ -1,6 +1,5 @@
 package controller;
 
-import bo.custom.DriverBO;
 import dto.DriverDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
@@ -19,21 +18,26 @@ public class DriverFormController implements Initializable {
     public TextField txtLicense;
     public Button btnDriver;
 
-    public void saveDriver(ActionEvent actionEvent) throws Exception {
-        boolean b = DriverBO.saveDriver(new DriverDTO(txtName.getText(), txtAddress.getText(), txtContact.getText(),txtNic.getText(), txtLicense.getText()));
+    public void saveDriver(ActionEvent actionEvent){
+        String driverName = txtName.getText ( );
+        String address = txtAddress.getText ( );
+        String contact =  txtContact.getText ( );
+        String nic = txtNic.getText ( );
+        String drivingLicense = txtLicense.getText ( );
 
-        if(b){
-            Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setHeaderText(null);
-            alert.setContentText("Course Added Success...");
-            alert.showAndWait();
+
+        DriverDTO driversDTO = new DriverDTO (
+                txtName.getText ( ) ,
+                txtAddress.getText ( ) ,
+                txtContact.getText ( ) ,
+                txtNic.getText ( ) ,
+                txtLicense.getText ( )
+        );
+
+        if ( new ManageDriver ().saveDriver ( driversDTO ) ){
+            Alert alert = new Alert( Alert.AlertType.INFORMATION, "Driver is Saved");
+            alert.show();
         }
-        txtCode.setText("");
-        txtName.setText("");
-        txtType.setText("");
-        txtDuration.setText("");
-
-        loadAllPrograms();
 
     }
 

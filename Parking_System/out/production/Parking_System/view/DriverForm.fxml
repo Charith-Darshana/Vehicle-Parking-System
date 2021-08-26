@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="403.0" prefWidth="513.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverFormController">
    <children>
       <Pane prefHeight="403.0" prefWidth="200.0" style="-fx-background-color: #80008b;">
@@ -41,7 +40,7 @@
       <TextField fx:id="txtContact" layoutX="243.0" layoutY="153.0" prefHeight="39.0" prefWidth="220.0" promptText="Contact no :" />
       <TextField fx:id="txtNic" layoutX="243.0" layoutY="215.0" prefHeight="39.0" prefWidth="220.0" promptText="NIC" />
       <TextField fx:id="txtLicense" layoutX="243.0" layoutY="276.0" prefHeight="39.0" prefWidth="220.0" promptText="Driving License no :" />
-      <Button fx:id="btnDriver" layoutX="303.0" layoutY="337.0" mnemonicParsing="false" onAction="#saveDriver" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: #80008b;" text="Add Driver" textFill="WHITE">
+      <Button fx:id="btnDriver" layoutX="303.0" layoutY="337.0" mnemonicParsing="false" onAction="#saveDriver" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: green;" text="Add Driver" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

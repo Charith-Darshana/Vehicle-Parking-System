@@ -1,29 +1,29 @@
 package dto;
 
 public class DriverDTO {
-    private String name;
+    private String driverName;
     private String address;
     private String contact;
     private String nic;
-    private String license;
+    private String drivingLicense;
 
     public DriverDTO() {
     }
 
-    public DriverDTO(String name, String address, String contact, String nic, String license) {
-        this.name = name;
+    public DriverDTO(String driverName, String address, String contact, String nic, String drivingLicense) {
+        this.driverName = driverName;
         this.address = address;
         this.contact = contact;
         this.nic = nic;
-        this.license = license;
+        this.drivingLicense = drivingLicense;
     }
 
-    public String getName() {
-        return name;
+    public String getDriverName() {
+        return driverName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDriverName(String driverName) {
+        this.driverName = driverName;
     }
 
     public String getAddress() {
@@ -50,22 +50,22 @@ public class DriverDTO {
         this.nic = nic;
     }
 
-    public String getLicense() {
-        return license;
+    public String getDrivingLicense() {
+        return drivingLicense;
     }
 
-    public void setLicense(String license) {
-        this.license = license;
+    public void setDrivingLicense(String drivingLicense) {
+        this.drivingLicense = drivingLicense;
     }
 
     @Override
     public String toString() {
         return "DriverDTO{" +
-                "name='" + name + '\'' +
+                "driverName='" + driverName + '\'' +
                 ", address='" + address + '\'' +
                 ", contact='" + contact + '\'' +
                 ", nic='" + nic + '\'' +
-                ", license='" + license + '\'' +
+                ", drivingLicense='" + drivingLicense + '\'' +
                 '}';
     }
 }
