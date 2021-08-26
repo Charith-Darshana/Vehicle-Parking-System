@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="403.0" prefWidth="513.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverFormController">
+   <children>
+      <Pane prefHeight="403.0" prefWidth="200.0" style="-fx-background-color: #80008b;">
+         <children>
+            <Label layoutX="21.0" layoutY="173.0" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="219.0" text="New" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="258.0" text="Driver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="96.0" fitWidth="109.0" layoutX="37.0" layoutY="68.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/57-571075_add-events-staff-members-and-sermons-quickly-easily.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="txtName" layoutX="243.0" layoutY="30.0" prefHeight="39.0" prefWidth="220.0" promptText="Driver Name" />
+      <TextField fx:id="txtAddress" layoutX="243.0" layoutY="93.0" prefHeight="39.0" prefWidth="220.0" promptText="Address" />
+      <TextField fx:id="txtContact" layoutX="243.0" layoutY="153.0" prefHeight="39.0" prefWidth="220.0" promptText="Contact no :" />
+      <TextField fx:id="txtNic" layoutX="243.0" layoutY="215.0" prefHeight="39.0" prefWidth="220.0" promptText="NIC" />
+      <TextField fx:id="txtLicense" layoutX="243.0" layoutY="276.0" prefHeight="39.0" prefWidth="220.0" promptText="Driving License no :" />
+      <Button fx:id="btnDriver" layoutX="303.0" layoutY="337.0" mnemonicParsing="false" onAction="#saveDriver" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: #80008b;" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
