@@ -50,7 +50,7 @@ public class LoginFormController {
                             ButtonType.OK, ButtonType.NO).show();
                 }
 //            }else {
-//                txtPassword.setFocusC(Paint.valueOf("red"));
+//                txtPassword.setFocusColor(Paint.valueOf("red"));
 //                txtPassword.requestFocus();
 //            }
 //        }else{

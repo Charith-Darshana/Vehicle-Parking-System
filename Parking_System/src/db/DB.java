@@ -21,6 +21,8 @@ public class DB {
         }
     }
 
+
+
     public void saveVehicle(String vehicleNumber , String vehicleType , String maximumWeight , String noOfPassenger ){
         for (int i = 0; i < 14; i++) {
             if ( vehicles[i][0]==null ){
