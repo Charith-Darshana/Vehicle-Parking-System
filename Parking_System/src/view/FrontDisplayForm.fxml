@@ -20,8 +20,8 @@
          </children>
       </Pane>
       <TextField fx:id="txtVehicleType" layoutX="24.0" layoutY="143.0" prefHeight="35.0" prefWidth="172.0" promptText="Vehicle Type" />
-      <ComboBox fx:id="cmbVehicle" editable="true" layoutX="24.0" layoutY="77.0" prefHeight="35.0" prefWidth="172.0" promptText="Select Vehicle" />
-      <ComboBox fx:id="cmbDriver" editable="true" layoutX="24.0" layoutY="207.0" prefHeight="35.0" prefWidth="172.0" promptText="Select Driver" />
+      <ComboBox fx:id="cmbVehicle" editable="true" layoutX="24.0" layoutY="77.0" onAction="#selectVehicleNumber" prefHeight="35.0" prefWidth="172.0" promptText="Select Vehicle Number" />
+      <ComboBox fx:id="cmbDriver" editable="true" layoutX="24.0" layoutY="207.0" onAction="#selectDriverName" prefHeight="35.0" prefWidth="172.0" promptText="Select Driver" />
       <Label fx:id="lblTime" layoutX="300.0" layoutY="68.0" prefHeight="54.0" prefWidth="160.0">
          <font>
             <Font name="System Bold" size="26.0" />
@@ -37,7 +37,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="81.0" layoutY="295.0" prefHeight="94.0" prefWidth="130.0" text="   12">
+      <Label fx:id="lblSlot" layoutX="81.0" layoutY="295.0" prefHeight="94.0" prefWidth="130.0">
          <font>
             <Font name="System Bold" size="46.0" />
          </font>
