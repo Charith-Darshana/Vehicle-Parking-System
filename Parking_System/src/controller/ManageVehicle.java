@@ -50,7 +50,7 @@ public class ManageVehicle implements CrudDAO<Vehicle,String> {
 
     @Override
     public List<Vehicle> getAll() {
-        return null;
+        return vehicleArrayList;
     }
 
     @Override

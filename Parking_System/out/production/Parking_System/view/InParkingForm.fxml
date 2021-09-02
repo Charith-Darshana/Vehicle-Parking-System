@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="591.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingFormController">
    <children>
       <Pane prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: #80008b;">
@@ -21,7 +20,7 @@
             </Label>
          </children>
       </Pane>
-      <ComboBox editable="true" layoutX="25.0" layoutY="68.0" prefHeight="35.0" prefWidth="150.0" promptText="In Parking" />
+      <ComboBox fx:id="cmbSelect" editable="true" layoutX="25.0" layoutY="68.0" onAction="#cmdManagement" prefHeight="35.0" prefWidth="150.0" />
       <Button fx:id="btnV" layoutX="248.0" layoutY="68.0" mnemonicParsing="false" onAction="#addVehicle" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #80008b;" text="Add Vehicle" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -37,13 +36,42 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <TableView layoutX="22.0" layoutY="127.0" prefHeight="251.0" prefWidth="556.0">
-        <columns>
-          <TableColumn prefWidth="112.0" text="Vehicle Number " />
-          <TableColumn prefWidth="146.0" text="Vehicle Type" />
-            <TableColumn prefWidth="117.0" text="Parking Slot" />
-            <TableColumn prefWidth="180.0" text="Parked Time" />
-        </columns>
-      </TableView>
+      <AnchorPane fx:id="tblRoot" layoutX="14.0" layoutY="131.0" prefHeight="256.0" prefWidth="574.0">
+         <children>
+            <TableView fx:id="tblDriver" layoutX="21.0" layoutY="13.0" prefHeight="228.0" prefWidth="535.0" visible="false">
+              <columns>
+                <TableColumn fx:id="colDriverName" prefWidth="129.0" text="Name" />
+                <TableColumn fx:id="colDriverAddress" prefWidth="101.0" text="Address" />
+                  <TableColumn fx:id="colDriverContact" prefWidth="105.0" text="Contact" />
+                  <TableColumn fx:id="colDriverNic" prefWidth="102.0" text="NIC" />
+                  <TableColumn fx:id="colDriverLicense" prefWidth="96.0" text="Driving License" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tblVehicle" layoutX="21.0" layoutY="27.0" prefHeight="205.0" prefWidth="535.0" visible="false">
+              <columns>
+                <TableColumn fx:id="colVehicleNumber" prefWidth="144.0" text="Vehicle Number" />
+                <TableColumn fx:id="colVehicleType" prefWidth="136.0" text="Vehicle Type" />
+                  <TableColumn fx:id="colPassengers" prefWidth="132.0" text="No of Passengers" />
+                  <TableColumn fx:id="colWeight" prefWidth="121.0" text="Maximum Weight" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tblOnDelivery" layoutX="21.0" layoutY="32.0" prefHeight="200.0" prefWidth="535.0" visible="false">
+              <columns>
+                <TableColumn fx:id="colDeliveryVehicleNumber" prefWidth="137.0" text="Vehicle Number" />
+                <TableColumn fx:id="colDeliveryType" prefWidth="118.0" text="Vehicle Type" />
+                  <TableColumn fx:id="colDeliveryDriverName" prefWidth="163.0" text="Driver Name" />
+                  <TableColumn fx:id="colDeliveryTime" prefWidth="115.0" text="LeftTime" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tblPark" layoutX="21.0" layoutY="39.0" prefHeight="193.0" prefWidth="535.0">
+              <columns>
+                <TableColumn fx:id="colParkVehicleNumber" prefWidth="129.0" text="Vehicle Number" />
+                <TableColumn fx:id="colParkType" prefWidth="130.0" text="Vehicle Type" />
+                  <TableColumn fx:id="colParkSlot" prefWidth="149.0" text="Parking Slot" />
+                  <TableColumn fx:id="colParkTime" prefWidth="125.0" text="Park Time" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
