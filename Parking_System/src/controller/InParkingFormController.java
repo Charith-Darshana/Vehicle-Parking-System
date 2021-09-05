@@ -50,6 +50,7 @@ public class InParkingFormController {
     public TableColumn colParkSlot;
     public TableColumn colParkTime;
     public ComboBox cmbSelect;
+    public Button btnLogOut;
 
     public void initialize(){
         loadAllVehicle();
@@ -198,6 +199,7 @@ public class InParkingFormController {
     }
 
     public void loadAllDelivery(){
+
         List<Delivery> all = ManageDelivery.getInstance ( ).getAll ( );
 
         ObservableList<DeliveryTM> deliveryTMS = FXCollections.observableArrayList ( );
@@ -208,4 +210,8 @@ public class InParkingFormController {
         tblOnDelivery.setItems ( deliveryTMS );
     }
 
+    public void logOutOnAction(ActionEvent actionEvent) {
+        Stage stage = (Stage) btnLogOut.getScene().getWindow();
+        stage.close();
+    }
 }

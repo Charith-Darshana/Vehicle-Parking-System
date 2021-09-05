@@ -20,7 +20,7 @@
             </Label>
          </children>
       </Pane>
-      <ComboBox fx:id="cmbSelect" editable="true" layoutX="25.0" layoutY="68.0" onAction="#cmdManagement" prefHeight="35.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbSelect" editable="true" focusTraversable="false" layoutX="25.0" layoutY="68.0" onAction="#cmdManagement" prefHeight="35.0" prefWidth="150.0" />
       <Button fx:id="btnV" layoutX="248.0" layoutY="68.0" mnemonicParsing="false" onAction="#addVehicle" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #80008b;" text="Add Vehicle" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
@@ -31,7 +31,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="488.0" layoutY="68.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: red;" text="Log Out" textFill="WHITE">
+      <Button fx:id="btnLogOut" layoutX="488.0" layoutY="68.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: red;" text="Log Out" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -63,7 +63,7 @@
                   <TableColumn fx:id="colDeliveryTime" prefWidth="115.0" text="LeftTime" />
               </columns>
             </TableView>
-            <TableView fx:id="tblPark" layoutX="21.0" layoutY="39.0" prefHeight="193.0" prefWidth="535.0">
+            <TableView fx:id="tblPark" focusTraversable="false" layoutX="21.0" layoutY="39.0" prefHeight="193.0" prefWidth="535.0">
               <columns>
                 <TableColumn fx:id="colParkVehicleNumber" prefWidth="129.0" text="Vehicle Number" />
                 <TableColumn fx:id="colParkType" prefWidth="130.0" text="Vehicle Type" />

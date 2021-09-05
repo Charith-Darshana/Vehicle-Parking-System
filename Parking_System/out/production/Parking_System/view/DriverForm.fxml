@@ -33,6 +33,11 @@
                   <Image url="@../assets/57-571075_add-events-staff-members-and-sermons-quickly-easily.png" />
                </image>
             </ImageView>
+            <ImageView fx:id="btnBack" fitHeight="32.0" fitWidth="33.0" layoutX="5.0" layoutY="6.0" onMouseClicked="#backOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/bk.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <TextField fx:id="txtName" layoutX="243.0" layoutY="30.0" prefHeight="39.0" prefWidth="220.0" promptText="Driver Name" />

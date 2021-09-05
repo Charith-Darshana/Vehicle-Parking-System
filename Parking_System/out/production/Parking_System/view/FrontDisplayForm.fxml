@@ -19,25 +19,25 @@
             </Label>
          </children>
       </Pane>
-      <TextField fx:id="txtVehicleType" layoutX="24.0" layoutY="143.0" prefHeight="35.0" prefWidth="172.0" promptText="Vehicle Type" />
-      <ComboBox fx:id="cmbVehicle" editable="true" layoutX="24.0" layoutY="77.0" onAction="#selectVehicleNumber" prefHeight="35.0" prefWidth="172.0" promptText="Select Vehicle Number" />
-      <ComboBox fx:id="cmbDriver" editable="true" layoutX="24.0" layoutY="207.0" onAction="#selectDriverName" prefHeight="35.0" prefWidth="172.0" promptText="Select Driver" />
-      <Label fx:id="lblTime" layoutX="300.0" layoutY="68.0" prefHeight="54.0" prefWidth="160.0">
+      <TextField fx:id="txtVehicleType" focusTraversable="false" layoutX="24.0" layoutY="143.0" prefHeight="35.0" prefWidth="172.0" promptText="Vehicle Type" />
+      <ComboBox fx:id="cmbVehicle" editable="true" focusTraversable="false" layoutX="24.0" layoutY="77.0" onAction="#selectVehicleNumber" prefHeight="35.0" prefWidth="172.0" promptText="Select Vehicle Number" />
+      <ComboBox fx:id="cmbDriver" editable="true" focusTraversable="false" layoutX="24.0" layoutY="207.0" onAction="#selectDriverName" prefHeight="35.0" prefWidth="172.0" promptText="Select Driver" />
+      <Label fx:id="lblTime" focusTraversable="false" layoutX="300.0" layoutY="68.0" prefHeight="54.0" prefWidth="160.0">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" layoutX="461.0" layoutY="77.0" prefHeight="35.0" prefWidth="101.0">
+      <Label fx:id="lblDate" focusTraversable="false" layoutX="461.0" layoutY="77.0" prefHeight="35.0" prefWidth="101.0">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="64.0" layoutY="267.0" prefHeight="35.0" prefWidth="179.0" text="Your Parking Slot Number">
+      <Label focusTraversable="false" layoutX="64.0" layoutY="267.0" prefHeight="35.0" prefWidth="179.0" text="Your Parking Slot Number">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblSlot" layoutX="81.0" layoutY="295.0" prefHeight="94.0" prefWidth="130.0">
+      <Label fx:id="lblSlot" focusTraversable="false" layoutX="123.0" layoutY="292.0" prefHeight="94.0" prefWidth="130.0">
          <font>
             <Font name="System Bold" size="46.0" />
          </font>
@@ -47,7 +47,7 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button fx:id="btnShift" layoutX="348.0" layoutY="206.0" mnemonicParsing="false" onAction="#onDiliveryShift" prefHeight="38.0" prefWidth="160.0" style="-fx-background-color: #80008b;" text="On Dilivery Shift" textFill="WHITE">
+      <Button fx:id="btnShift" layoutX="348.0" layoutY="206.0" mnemonicParsing="false" onAction="#onDiliveryShift" prefHeight="38.0" prefWidth="160.0" style="-fx-background-color: #80008b;" text="On Delivery Shift" textFill="WHITE">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>

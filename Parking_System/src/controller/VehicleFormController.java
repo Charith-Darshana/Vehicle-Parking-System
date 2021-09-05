@@ -8,6 +8,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 import model.Vehicle;
@@ -22,6 +24,7 @@ public class VehicleFormController {
     public TextField txtWeight;
     public ComboBox txtType;
     public Button btnVehicle;
+    public ImageView btnBack;
 
     public void initialize(){
         ObservableList<Object> observableArrayList = FXCollections.observableArrayList();
@@ -68,5 +71,10 @@ public class VehicleFormController {
                 }
             }
         }
+    }
+
+    public void backOnAction(MouseEvent mouseEvent) {
+        Stage stage = (Stage) btnBack.getScene().getWindow();
+        stage.close();
     }
 }
